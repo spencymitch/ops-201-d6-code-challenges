@@ -7,6 +7,8 @@
 # asks the user for a PID, then kills the process with that PID.
 # Use a loop in your script.
 
+# Marco Aliaga helped me produce this
+
 runningprocesses(){
     ps aux 
 }
