@@ -1,0 +1,10 @@
+Name: Spencer Mitchell
+Last date of revision: 2/16/23
+
+
+
+
+
+Get-EventLog -LogName System -After (Get-Date).AddDays(-1) | Out-File "C:\Users\spenc\Desktop\last_24.txt"
+
+Get-EventLog -LogName System -EntryType Error (Get-Date).AddDays(-1) | Out-File "C:\Users\spenc\Desktop\errors.txt"
