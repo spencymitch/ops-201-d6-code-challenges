@@ -1,0 +1,19 @@
+# Print to the terminal screen all active processes ordered by highest CPU time consumption at the top.
+Get-Process | Sort-Object -Property CPU -Descending | Select-Object -First 20
+
+# Print to the terminal screen all active processes ordered by highest Process Identification Number at the top.
+Get-Process | Sort-Object -Property ID -Descending | Select-Object -First 20
+
+# Print to the terminal screen the top five active processes ordered by highest Working Set (WS(K)) at the top.
+Get-Process | Sort-Object -Property WS -Descending | Select-Object -First 5 
+# Start the process Internet Explorer (iexplore.exe) ten times using a for loop. Have each instance open https://owasp.org/www-project-top-ten/.
+[system.Diagnostics.Process]::Start("iexplore"," https://owasp.org/www-project-top-ten/")
+
+1..10 | ForEach-Object {
+    $ie = New-Object -ComObject InternetExplorer.Application
+    $ie.Navigate("https://owasp.org/www-project-top-ten/")
+    $ie.Visible = $true
+}
+
+# Kill a process by its Process Identification Number. Choose a process whose termination won’t destabilize the system, such as Internet Explorer or MS Edge
+Stop-Process -Id 19136
