@@ -1,3 +1,7 @@
+# Name: Spencer Mitchell
+# Last date of revision: 2/20/23
+# Function: Functions listed below
+
 # Print to the terminal screen all active processes ordered by highest CPU time consumption at the top.
 Get-Process | Sort-Object -Property CPU -Descending | Select-Object -First 20
 
