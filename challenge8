@@ -1,1 +1,5 @@
+Name: Spencer Mitchell
+Last Date of revision: 2/20/23
+Purpose: This was a script to automate a backup of work files from one drive to another.
+
 ROBOCOPY "C:\Users\j.thompson\Desktop\My Project Files" "E:\projectsbackup" /mir /E
