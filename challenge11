@@ -2,6 +2,7 @@
 # Author: Spencer Mitchell
 # Date of latest revision: 2/20/23
 # Purpose: Write a Powershell script that automates the configuration of a new Windows 10 endpoint. Descriptions above script.
+# these scripts were found on https://github.com/superswan/Powershell-SysAdmin
 
 # Enable File and Printer Sharing
 Set-NetFireWallRule -DisplayGroup "File and Printer Sharing" -enabled true
