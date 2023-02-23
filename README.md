@@ -1,5 +1,3 @@
 # ops-201-d6-code-challenges
 
-This is my code for ops 201.
-
-This is to test VScode tracking.
+This repo is a collection of coding challenges presented to me during my Cyber Security course through Code Fellows. I am learning these fundamental skills to be able to utilize them in my career. We learned how to write scripts in Bash, Windows Powershell, and .bat files. [Ops Challenge 4](https://github.com/spencymitch/ops-201-d6-code-challenges/blob/main/ops-challenge04.sh) was my favorite script I wrote, which showed me how to automate creating files and directories. I think that could be very useful in the future. If I had time currently, I would continue to review the different types of loops. I would like to script setup processes for new PCs. 
